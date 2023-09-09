@@ -1,0 +1,56 @@
+#image-box {
+  max-height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*이미지 박스 가운데 정렬*/
+}
+
+#image-box > img {
+  width: 100%;
+  max-height: 300px;
+  object-fit: contain;
+}
+
+#profile-box {
+  padding: 16px;
+  margin-top: 8px;
+  border-bottom: 1px solid #e9ecef;
+}
+#profile-box > img {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#profile-box > span {
+  font-size: 10px;
+  margin-left: 8px;
+  font-weight: 600;
+}
+
+#contents-box {
+  padding: 16px;
+}
+
+#name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.product-headlien {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#product {
+  max-height: 100vh;
+  overflow: hidden; /* 이미지가 넘칠 경우를 대비하여 숨김 처리 */
+}
+
+#product > img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover; /* 배너 이미지를 좌우 양옆까지 꽉 차게 표시 */
+}
