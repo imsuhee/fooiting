@@ -8,6 +8,8 @@ import {
   toggleDropdown2,
   toggleDropdown3,
 } from "./Dropdown.js";
+import "../../pages/LoginFrom/Login";
+
 function Header() {
   //   const [scrolled, setScrolled] = useState(false);
 
@@ -90,12 +92,12 @@ function Header() {
             )}
           </div>
           <div className="dropdown">
-            <Link to="../Loginexchk" className="navbarMenu">
+            <Link to="../Login" className="navbarMenu">
               로그인
             </Link>
           </div>
           <div className="dropdown">
-            <Link className="navbarMenu" to={"../SignupPage"}>
+            <Link className="navbarMenu" to={"../Signup"}>
               회원가입
             </Link>
           </div>
