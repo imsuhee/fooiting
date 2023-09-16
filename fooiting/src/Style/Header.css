@@ -11,6 +11,13 @@
   transition: transform 0.3s ease;
   margin-top: 5px;
 }
+@media (max-width: 600px) {
+  .dropdown-Menu {
+    white-space: nowrap; /* 화면이 600px 미만으로 줄어들면 텍스트 짤림 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
 
 #header-area img {
   width: 130px;
@@ -51,11 +58,9 @@
 }
 
 /* 드롭다운 메뉴 컨테이너 */
-.dropdown-Menu {
-}
 .dropdown {
   position: relative;
-  display: inline-block;
+  display: table-cell;
   cursor: pointer;
   justify-content: center;
   font-size: 17px;
