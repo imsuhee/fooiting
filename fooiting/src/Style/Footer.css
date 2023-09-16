@@ -1,0 +1,67 @@
+.social-icon {
+  /*푸터쪽 아이콘*/
+  color: #000000;
+  font-size: 50px;
+  margin-right: 10px;
+}
+
+.social-icon:hover {
+  /*푸터쪽 아이콘 선택시*/
+  color: #fff;
+}
+
+.footer-links {
+  display: flex;
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.footer-links a {
+  color: #000000;
+  margin-right: 15px;
+  text-decoration: none;
+}
+
+.footer-links a:hover {
+  color: #fff;
+}
+
+.footer-container {
+  display: flex;
+}
+#footer {
+  background-color: #fcc555;
+  padding: 100px 100px 0px 100px;
+}
+.footer-container {
+  display: flex;
+  justify-content: space-between; /* 좌우 양끝에 정렬 */
+  align-items: center; /* 수직 가운데 정렬 */
+  padding: 10px 20px; /* 위아래 여백 설정 */
+  color: #fff; /* 텍스트 색상 설정 */
+}
+@media (max-width: 1200px) {
+  .footer-container {
+    white-space: nowrap; /* 화면이 600px 미만으로 줄어들면 텍스트 짤림 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.footer-img img {
+  width: 200px; /* 원하는 너비로 설정 */
+  height: auto; /* 원하는 높이로 설정 */
+  margin-bottom: 10px;
+}
+
+.footer-company {
+  font-size: 20px;
+  color: #000000;
+  padding-bottom: 10px;
+  text-decoration: none;
+  display: block;
+}
+.footer-service {
+  color: #000000;
+  font-size: 20px;
+  margin-bottom: 50px;
+}
