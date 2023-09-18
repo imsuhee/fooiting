@@ -1,0 +1,126 @@
+#product-list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 50px;
+}
+
+.product-card {
+  width: 300px;
+  height: 300px;
+  align-items: center;
+  margin-bottom: 120px;
+  /* border: 1px solid rgb(0, 0, 0); */
+  background-color: #fffafa;
+  overflow: hidden; /*모서리 둥글게*/
+  position: relative;
+}
+
+.product-card-infor {
+  width: 700px;
+  height: 600px;
+  align-items: center;
+  margin-bottom: 120px;
+  border: 1px solid #ccc;
+  background-color: #fffafa;
+  /*overflow: hidden; /*모서리 둥글게*/
+  position: relative;
+}
+
+.product-img {
+  object-fit: contain; /*각기 다른 해상도의 이미지를 가로세로 맞춰 보여준다!! */
+  display: inline-block;
+  margin: 0 auto; /* 이미지를 수평 중앙 정렬 */
+  border-radius: 50%; /* 동그라미 모양 */
+  overflow: hidden; /* 이미지가 동그라미 내에 잘리도록 설정 */
+  width: 200px; /* 이미지 너비 조절 */
+  height: 200px; /* 이미지 높이 조절 */
+}
+
+.product-img-infor {
+  object-fit: contain; /*각기 다른 해상도의 이미지를 가로세로 맞춰 보여준다!! */
+  display: inline-block;
+  margin: 0 auto; /* 이미지를 수평 중앙 정렬 */
+  width: 500px; /* 이미지 너비 조절 */
+  height: 350px; /* 이미지 높이 조절 */
+}
+
+.product-contents {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  font-size: 10px;
+  align-items: center;
+}
+.product-container {
+  display: flex; /* 상품 카드들을 가로로 나열 */
+  flex-wrap: nowrap; /* 줄 바꿈을 방지하여 가로로만 나열 */
+  overflow-x: auto; /* 가로 스크롤을 허용 (만약 카드들이 화면에 모두 들어갈 수 없을 때) */
+  gap: 50px; /* 각 상품 카드 사이의 간격 */
+  padding: 20px 0; /* 위 아래 여백을 추가 */
+}
+
+@media (max-width: 900px) {
+  .product-container {
+    white-space: nowrap; /* 화면이 600px 미만으로 줄어들면 텍스트 짤림 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.product-name {
+  font-size: 14px;
+}
+.product-price {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.product-seller {
+  display: flex;
+  align-items: center;
+}
+
+.product-link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.review-headlien {
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+.reservation-headlien {
+  display: flex; /*수평정렬*/
+  align-items: center; /*가운데정렬*/
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+.region {
+  text-decoration: none; /* 밑줄 제거 */
+  display: block; /* 각 링크를 블록 요소로 표시하여 세로 정렬 */
+  color: #000; /* 링크 텍스트 색상 지정 (원하는 색상으로 변경 가능) */
+  margin-right: 10px;
+}
+.map {
+  display: flex; /*수평정렬*/
+  margin-bottom: 50px;
+  margin-left: 30px;
+}
+
+.main {
+}
+
+@media (max-width: 900px) {
+  .main {
+    white-space: nowrap; /* 화면이 600px 미만으로 줄어들면 텍스트 짤림 */
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+.ranking {
+  width: 100px;
+  height: 100px;
+  background-color: #e0e0e0;
+}
