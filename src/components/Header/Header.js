@@ -97,6 +97,11 @@ function Header() {
             </Link>
           </div>
           <div className="dropdown">
+            <Link to="../MyPage" className="navbarMenu">
+              마이페이지
+            </Link>
+          </div>
+          <div className="dropdown">
             <Link className="navbarMenu" to={"../Signup"}>
               회원가입
             </Link>
